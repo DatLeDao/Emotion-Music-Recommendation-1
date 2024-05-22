@@ -1,14 +1,16 @@
 import numpy as np
 import cv2
+from tensorflow import keras
 from PIL import Image
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, Flatten
-from tensorflow.keras.layers import Conv2D
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.layers import MaxPooling2D
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.python.keras.models import Sequential
+from tensorflow.python.keras.layers import Dense, Dropout, Flatten
+from tensorflow.python.keras.layers import Conv2D
+from tensorflow.python.keras.optimizers import adam_v2
+from tensorflow.python.keras.layers import MaxPooling2D
+#from keras.preprocessing.image import ImageDataGenerator
+from keras.src.legacy.preprocessing.image import ImageDataGenerator
 from pandastable import Table, TableModel
-from tensorflow.keras.preprocessing import image
+from keras.src.legacy.preprocessing import image
 import datetime
 from threading import Thread
 # from Spotipy import *  
